@@ -1,0 +1,15 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.bak
+
+# Node & package artifacts
+node_modules/
+.npm/
+.env
+.env.local
