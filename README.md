@@ -36,13 +36,18 @@ npx -y skills add cemcakirlar/cemcakirlar-skills --skill cc-agent-env-doctor -g 
 
 ## 🔄 Updating Skills
 
-When updates are published to this repository, update only the `cc-*` skills across all your agents with:
+Running a blind `npx skills update` updates **every single third-party skill** installed on your system, which may introduce breaking changes to unrelated tools. Furthermore, `npx skills update` does not accept repository URLs as arguments.
+
+Because `npx skills add` is idempotent, you can safely update **only this repository's skills** without touching any other skills on your machine:
 
 ```bash
-npx skills update cc-agent-env-doctor cc-create-tests cc-doc-audit -g -y
+npx -y skills add cemcakirlar/cemcakirlar-skills -g --skill '*' -a universal -y
 ```
 
-*(Or to update an individual skill: `npx skills update cc-agent-env-doctor -g -y`)*
+> **Note:** Alternatively, if you prefer the native `update` command for specific skills:
+> ```bash
+> npx skills update cc-agent-env-doctor cc-create-tests cc-doc-audit -g -y
+> ```
 
 ---
 
