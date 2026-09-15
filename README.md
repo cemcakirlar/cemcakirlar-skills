@@ -18,18 +18,18 @@ Compatible with **Claude Code**, **Google Antigravity**, **Cursor**, **Codex / O
 
 ## 🚀 Installation
 
-### 1. Install All Skills Globally
-To install all `cc-*` skills into your universal agent skills pool (`~/.agents/skills`):
+### 1. Install All Skills Globally (Recommended)
+To install all `cc-*` skills cleanly into your universal agent skills pool (`~/.agents/skills`):
 
 ```bash
-npx -y skills add cemcakirlar/cemcakirlar-skills -g --all -y
+npx -y skills add cemcakirlar/cemcakirlar-skills -g --skill '*' -a universal -y
 ```
 
 ### 2. Install a Specific Skill
 To install a specific skill (e.g. `cc-agent-env-doctor`):
 
 ```bash
-npx -y skills add cemcakirlar/cemcakirlar-skills --skill cc-agent-env-doctor -g -y
+npx -y skills add cemcakirlar/cemcakirlar-skills --skill cc-agent-env-doctor -g -a universal -y
 ```
 
 ---
