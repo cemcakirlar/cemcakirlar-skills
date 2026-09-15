@@ -36,12 +36,13 @@ npx -y skills add cemcakirlar/cemcakirlar-skills --skill cc-agent-env-doctor -g 
 
 ## 🔄 Updating Skills
 
-When updates are published to this repository, update them across all your agents with:
+When updates are published to this repository, update all global skills across all your agents with:
 
 ```bash
-npx skills update
+npx skills update -g -y
 ```
-*(Or run `python3 ~/.agents/skills/cc-agent-env-doctor/scripts/audit_environment.py --update-skills`)*
+
+*(Or use the doctor runner: `python3 ~/.agents/skills/cc-agent-env-doctor/scripts/audit_environment.py --update-skills`)*
 
 ---
 
